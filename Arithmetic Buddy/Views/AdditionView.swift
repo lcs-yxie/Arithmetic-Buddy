@@ -107,18 +107,12 @@ struct AdditionView: View {
             return
         }
         
-        // Provide feedback to the user
-        // When should they guess higher?
-        // When should then guess lower?
-        // FILL IN THIS CODE
         
-        if selectedNumber > correctSum {
-            feedback = "Less"
-        } else if correctSum > selectedNumber{
-            feedback = "More"
+        if selectedNumber == correctSum {
+            feedback = "Correct Answer!"
         }
         else{
-            feedback = "Correct Answer!"
+            feedback = "Try Again!"
         }
         
     }
